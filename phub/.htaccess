@@ -1,7 +1,0 @@
-
-#####THE FOLLOWING IS REQUIRED FOR PROTECTED FOLDERS
-AuthUserFile /home/vol1000_3/byethost10.com/b10_25102403/mkhan.66ghz.com/htdocs/phub//.htpasswd.7e4bb6fa35b8635be500b6536b0c2332
-AuthName password_required
-AuthType Basic
-Require valid-user
-########END REQUIRE
