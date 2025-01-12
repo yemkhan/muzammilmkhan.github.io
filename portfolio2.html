@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Responsive Videos - Muzammil Khan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .main-video {
+            margin-bottom: 20px;
+        }
+
+        .main-video iframe {
+            width: 100%;
+            height: 450px;
+            border-radius: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-item iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .main-video iframe {
+                height: 300px;
+            }
+
+            .grid-item iframe {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">Muzammil Khan</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="./index.html#home" class="nav_link">
+                            <i class="uil uil-estate nav_icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./index.html#about" class="nav_link">
+                            <i class="uil uil-user nav_icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./index.html#skills" class="nav_link">
+                            <i class="uil uil-file-alt nav_icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./index.html#qualification" class="nav_link">
+                            <i class="uil uil-graduation-cap nav_icon"></i> Qualifications
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./index.html#projects" class="nav_link">
+                            <i class="uil uil-scenery nav_icon"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./index.html#contact" class="nav_link">
+                            <i class="uil uil-message nav-icon nav_icon"></i> Contact Me
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav_close" id="nav-close"></i>
+            </div>
+
+            <div class="nav_btns">
+                <!-- Change Theme -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="container">
+                <!-- Main Featured Video -->
+                <div class="main-video">
+                    <iframe src="https://www.youtube.com/embed/YOUR_MAIN_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <!-- Grid for Additional Videos -->
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <iframe src="https://www.youtube.com/embed/oqUIJcwKcbA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="grid-item">
+                        <iframe src="https://www.youtube.com/embed/mL-fSRJbaAM" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="grid-item">
+                        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="grid-item">
+                        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">Muzammil Khan</h1>
+                    <span class="footer_subtitle">Designer</span>
+                </div>
+
+                <ul class="footer_links">
+                    <li>
+                        <a href="./index.html#about" class="footer_link">About</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#projects" class="footer_link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#contact" class="footer_link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer_socials">
+                    <a href="https://www.linkedin.com/in/yemkhan/" target="_blank" class="footer_social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="https://x.com/yemkhan/" target="_blank" class="footer_social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mkhan.in/" target="_blank" class="footer_social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer_copy">&#169; Muzammil Khan | 2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>
